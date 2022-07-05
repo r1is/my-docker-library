@@ -1,8 +1,7 @@
 name: Docker Image CI
 
 on:
-  push:
-    branches: 
+  workflow_dispatch: 
 
 jobs:
   build-nginx:
@@ -28,4 +27,4 @@ jobs:
         with:
           context: ./nginx
           push: true
-          tags: anguiao/nginx-brotli
+          tags: az0sir/nginx-brotli
